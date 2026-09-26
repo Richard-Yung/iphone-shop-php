@@ -23,7 +23,7 @@ const DB_MYSQL_PASS    = '';
 const DB_MYSQL_CHARSET = 'utf8mb4';
 
 // ── Application ────────────────────────────────────────────────
-const APP_NAME     = 'iShop';
+const APP_NAME     = 'iPhone Togo';
 const APP_BASE_URL = '';
 const APP_ENV      = 'dev';              // 'dev' | 'prod'
 const APP_DEBUG    = true;

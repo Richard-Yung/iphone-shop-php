@@ -20,8 +20,8 @@ function e(?string $value): string
     return htmlspecialchars($value ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 
-/** Formate un prix en euros. */
+/** Formate un prix en FCFA (marché togolais). */
 function price(float $value): string
 {
-    return number_format($value, 2, ',', ' ') . ' €';
+    return number_format($value, 0, ',', ' ') . ' FCFA';
 }
