@@ -1,0 +1,19 @@
+# ── Base de données locale (générée, auto-seedée) ──
+data/*.sqlite
+data/*.sqlite-wal
+data/*.sqlite-shm
+
+# ── Dépendances (projet sans framework, mais par précaution) ──
+vendor/
+
+# ── Système / éditeurs ──
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ── Logs & temporaires ──
+*.log
+tmp/

@@ -1,0 +1,32 @@
+{
+    "name": "richard-yung/iphone-shop-php",
+    "description": "Boutique e-commerce d'iPhones (iPhone 17 → SE et plus anciens) — PHP 8 + SQLite, prête pour MySQL. Mobile-first, sans framework.",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "php", "php8", "sqlite", "mysql", "pdo",
+        "ecommerce", "e-commerce", "iphone", "shop", "boutique",
+        "mobile-first", "responsive", "no-framework"
+    ],
+    "authors": [
+        {
+            "name": "Richard-Yung"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*"
+    },
+    "suggest": {
+        "ext-pdo_mysql": "Migration production MySQL",
+        "ext-mbstring": "Manipulation de chaînes multi-octets"
+    },
+    "scripts": {
+        "serve": "php -S 0.0.0.0:8080 -t public",
+        "seed": "php database/seed.php"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
