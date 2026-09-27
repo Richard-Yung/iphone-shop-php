@@ -71,24 +71,20 @@ $wa = 'https://wa.me/22891852094';
 <main>
   <!-- ══ HERO ══ -->
   <section class="hero">
-    <p class="hero__tagline">Performance<br>Elegance<br>Innovation</p>
-    <div class="container hero__inner">
-      <div>
-        <h1>Acheter un iPhone au&nbsp;Togo</h1>
-        <p class="hero__sub">Tous les modèles, des prix compétitifs, livraison partout au Togo.</p>
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="#produits">
-            Voir les iPhone
-            <svg class="ic arr" aria-hidden="true"><use href="#i-arrow"/></svg>
-          </a>
-          <a class="btn btn--wa" href="<?= $wa ?>" target="_blank" rel="noopener">
-            <span class="wa-dot"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></span>
-            Nous contacter<br>sur WhatsApp
-          </a>
-        </div>
-      </div>
-      <div class="hero__img">
-        <img src="/assets/img/hero-iphones.png" alt="iPhone 16 Pro Max titanium doré et bleu nuit disponibles à la vente" fetchpriority="high" width="1152" height="864">
+    <img class="hero__bg" src="/assets/img/hero-bg.png" alt="" aria-hidden="true" fetchpriority="high" width="984" height="370">
+    <span class="sr-only">Performance, Élégance, Innovation</span>
+    <div class="hero__inner">
+      <h1>Acheter un iPhone<br>au&nbsp;Togo</h1>
+      <p class="hero__sub">Tous les modèles, des prix compétitifs,<br>livraison partout au Togo.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#produits">
+          Voir les iPhone
+          <svg class="ic arr" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="btn btn--wa" href="<?= $wa ?>" target="_blank" rel="noopener">
+          <span class="wa-dot"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></span>
+          <span>Nous contacter<br>sur WhatsApp</span>
+        </a>
       </div>
     </div>
   </section>
@@ -141,33 +137,28 @@ $wa = 'https://wa.me/22891852094';
   <?php if ($spotlight !== null): ?>
   <section class="section container" aria-label="Produit vedette">
     <div class="spot">
-      <div class="spot__inner">
-        <div class="spot__img">
-          <img src="/assets/img/featured-16-pro-max.png" alt="iPhone 16 Pro Max titanium doré — le top du moment" loading="lazy" width="1024" height="1024">
-        </div>
-        <div class="spot__body">
-          <p class="spot__eyebrow">Le top du moment</p>
-          <h2>iPhone 16 Pro Max</h2>
-          <p class="spot__sub">Une expérience exceptionnelle, à chaque instant.</p>
-          <div class="spot__feats">
-            <div class="spot__feat">
-              <span class="box"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg></span>
-              <span>Puissance Pro</span>
-            </div>
-            <div class="spot__feat">
-              <span class="box"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg></span>
-              <span>Caméra avancée</span>
-            </div>
-            <div class="spot__feat">
-              <span class="box"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span>
-              <span>Écran premium</span>
-            </div>
+      <div class="spot__body">
+        <p class="spot__eyebrow">Le top du moment</p>
+        <h2>iPhone 16 Pro Max</h2>
+        <p class="spot__sub">Une expérience exceptionnelle,<br>à chaque instant.</p>
+        <div class="spot__feats">
+          <div class="spot__feat">
+            <span class="box"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+            <span>Puissance Pro</span>
           </div>
-          <a class="spot__cta" href="/produit/<?= e($spotlight['slug']) ?>">
-            Voir le produit
-            <svg class="ic arr" aria-hidden="true"><use href="#i-arrow"/></svg>
-          </a>
+          <div class="spot__feat">
+            <span class="box"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg></span>
+            <span>Caméra avancée</span>
+          </div>
+          <div class="spot__feat">
+            <span class="box"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <span>Écran premium</span>
+          </div>
         </div>
+        <a class="spot__cta" href="/produit/<?= e($spotlight['slug']) ?>">
+          Voir le produit
+          <svg class="ic arr" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
       </div>
     </div>
   </section>
@@ -178,9 +169,9 @@ $wa = 'https://wa.me/22891852094';
     <h2 class="section__title">Pourquoi acheter chez nous ?</h2>
     <div class="adv">
       <div class="adv__card">
-        <svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg>
-        <h3>Produits 100% originaux</h3>
-        <p>Garantie</p>
+        <svg class="ic" aria-hidden="true"><use href="#i-badge"/></svg>
+        <h3>Produits 100%<br>originaux</h3>
+        <p>Garantie qualité</p>
       </div>
       <div class="adv__card">
         <svg class="ic" aria-hidden="true"><use href="#i-tag"/></svg>
@@ -203,29 +194,15 @@ $wa = 'https://wa.me/22891852094';
   <!-- ══ LIVRAISON PARTOUT AU TOGO ══ -->
   <section class="section container" id="livraison" aria-label="Zone de livraison">
     <div class="delivery">
-      <div>
+      <div class="delivery__txt">
         <h2>Livraison partout au Togo</h2>
-        <p class="delivery__txt">Recevez votre iPhone où que vous soyez dans le pays, en toute sécurité.</p>
+        <p>Recevez votre iPhone où que vous soyez dans le pays, en toute sécurité.</p>
         <div class="delivery__cities">
           <svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>
-          <p>Lomé &bull; Kara &bull; Sokodé &bull; Atakpamé &bull; Kpalimé &bull; Tsévié</p>
+          <p><strong>Lomé</strong> &bull; <strong>Kara</strong> &bull; <strong>Sokodé</strong> &bull; <strong>Atakpamé</strong> &bull; <strong>Kpalimé</strong> &bull; <strong>Tsévié</strong></p>
         </div>
       </div>
-      <div class="delivery__map" aria-hidden="true">
-        <svg viewBox="0 0 120 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M44 10 L62 5 L68 20 L63 36 L69 54 L64 72 L70 90 L65 108 L71 126 L66 144 L72 162 L67 178 L58 198 L46 216 L34 208 L28 190 L35 172 L27 154 L33 136 L25 118 L31 100 L25 82 L33 64 L27 46 L36 28 Z"
-                fill="#FFFFFF" stroke="#C6DAEB" stroke-width="2" stroke-linejoin="round"/>
-          <g>
-            <circle cx="52" cy="38" r="4.5" fill="#E2574C" stroke="#fff" stroke-width="1.6"/>
-            <circle cx="56" cy="72" r="4.5" fill="#E2574C" stroke="#fff" stroke-width="1.6"/>
-            <circle cx="50" cy="108" r="4.5" fill="#E2574C" stroke="#fff" stroke-width="1.6"/>
-            <circle cx="57" cy="142" r="4.5" fill="#E2574C" stroke="#fff" stroke-width="1.6"/>
-            <circle cx="47" cy="176" r="4.5" fill="#E2574C" stroke="#fff" stroke-width="1.6"/>
-            <circle cx="46" cy="204" r="6" fill="#17395D" stroke="#fff" stroke-width="2"/>
-          </g>
-        </svg>
-        <span class="hand">Votre iPhone,<br>partout au Togo&nbsp;&#8598;</span>
-      </div>
+      <img class="delivery__map" src="/assets/img/map-togo.png" alt="Carte du Togo — livraison dans les principales villes" loading="lazy" width="370" height="208">
     </div>
   </section>
 
@@ -235,7 +212,7 @@ $wa = 'https://wa.me/22891852094';
     <p class="section__sub">Nos articles pour vous aider à faire le meilleur choix.</p>
     <div class="blog">
       <article class="blog__card">
-        <div class="blog__img"><img src="/assets/img/blog/choisir.png" alt="Plusieurs modèles d'iPhone côte à côte pour comparer" loading="lazy" width="576" height="432"></div>
+        <div class="blog__img"><img src="/assets/img/a-choisir.png" alt="Plusieurs modèles d'iPhone côte à côte pour comparer" loading="lazy" width="276" height="128"></div>
         <h3>Quel iPhone choisir ?</h3>
         <p>Découvrez quel modèle correspond le mieux à vos besoins.</p>
         <a class="blog__link" href="/catalogue">Lire l'article
@@ -243,7 +220,7 @@ $wa = 'https://wa.me/22891852094';
         </a>
       </article>
       <article class="blog__card">
-        <div class="blog__img"><img src="/assets/img/blog/pro-vs-standard.png" alt="Comparaison entre iPhone Pro et modèle standard" loading="lazy" width="576" height="432"></div>
+        <div class="blog__img"><img src="/assets/img/a-pro-standard.png" alt="Comparaison entre iPhone Pro et modèle standard" loading="lazy" width="276" height="128"></div>
         <h3>iPhone Pro ou modèle standard ?</h3>
         <p>Les différences pour bien choisir.</p>
         <a class="blog__link" href="/catalogue">Lire l'article
@@ -251,7 +228,7 @@ $wa = 'https://wa.me/22891852094';
         </a>
       </article>
       <article class="blog__card">
-        <div class="blog__img"><img src="/assets/img/blog/stockage.png" alt="Illustration du choix de capacité de stockage" loading="lazy" width="576" height="432"></div>
+        <div class="blog__img"><img src="/assets/img/a-stockage.png" alt="Illustration du choix de capacité de stockage" loading="lazy" width="276" height="128"></div>
         <h3>Quelle capacité de stockage choisir ?</h3>
         <p>Bien évaluer vos besoins de stockage.</p>
         <a class="blog__link" href="/catalogue">Lire l'article
@@ -298,13 +275,10 @@ $wa = 'https://wa.me/22891852094';
 <footer class="footer">
   <div class="container">
     <div class="footer__top">
-      <div class="footer__brand">
-        <a class="logo" href="/" aria-label="iPhone Togo — accueil">
-          <svg class="ic" aria-hidden="true"><use href="#i-apple"/></svg>
-          <span>IPHONE TOGO</span>
-        </a>
-        <p>Votre iPhone, partout au Togo.</p>
-      </div>
+      <a class="logo" href="/" aria-label="iPhone Togo — accueil">
+        <svg class="ic" aria-hidden="true"><use href="#i-apple"/></svg>
+        <span>IPHONE TOGO</span>
+      </a>
       <nav class="footer__nav" aria-label="Liens de pied de page">
         <a href="/catalogue">iPhone</a><span class="sep">|</span>
         <a href="#conseils">Guides</a><span class="sep">|</span>
@@ -314,14 +288,17 @@ $wa = 'https://wa.me/22891852094';
       </nav>
     </div>
     <div class="footer__mid">
-      <a class="footer__wa" href="<?= $wa ?>" target="_blank" rel="noopener">
-        <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>
-        91 85 20 94
-      </a>
-      <div class="footer__soc">
-        <a href="#" aria-label="Facebook"><svg class="ic" aria-hidden="true"><use href="#i-fb"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg></a>
-        <a href="#" aria-label="YouTube"><svg class="ic" aria-hidden="true"><use href="#i-yt"/></svg></a>
+      <p>Votre iPhone, partout au Togo.</p>
+      <div class="footer__right">
+        <a class="footer__wa" href="<?= $wa ?>" target="_blank" rel="noopener">
+          <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>
+          91 85 20 94
+        </a>
+        <div class="footer__soc">
+          <a href="#" aria-label="Facebook"><svg class="ic" aria-hidden="true"><use href="#i-fb"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="ic" aria-hidden="true"><use href="#i-yt"/></svg></a>
+        </div>
       </div>
     </div>
     <p class="footer__copy">&copy; 2025 iPhone Togo. Tous droits réservés.</p>
